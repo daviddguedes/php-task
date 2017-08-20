@@ -1,0 +1,34 @@
+.box-sup-contact {
+    padding: 1.0em;
+    background-color: #e9e9e9;
+}
+
+.upload {
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/upload-100-opacity.png");
+    margin: 0 auto;
+}
+
+.upload:hover {
+    background-image: url("../images/upload-hover-100-opacity.png");
+}
+
+input[type="file"] {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+}
+
+.box-canvas {
+    padding: 1em;
+}
+
+#canvas-contact {
+    background-image: url("../images/placeholder_avatar_100.png");
+    background-repeat: no-repeat;
+}
+
+.jcrop-holder {
+    margin: 0 auto; !important;
+}

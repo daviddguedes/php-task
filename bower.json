@@ -1,0 +1,23 @@
+{
+  "name": "phpTask",
+  "description": "PHP Tasks from job",
+  "main": "public/index.php",
+  "authors": [
+    "David Coelho"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "Jcrop": "^2.0.4",
+    "jquery.browser": "^0.1.0"
+  }
+}
