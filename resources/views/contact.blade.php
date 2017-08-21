@@ -50,7 +50,7 @@
 
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="form-group">
+                                <div class="form-group{{ $errors->has('first_name') ? ' has-error' : '' }}">
                                     <label for="first_name">First name</label>
 
                                     {{ Form::text('first_name', old('first_name'), [
@@ -59,10 +59,16 @@
                                         'placeholder'=>'First name',
                                         'pattern' => '.{4,30}'
                                     ]) }}
+
+                                    @if ($errors->has('first_name'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('first_name') }}</strong>
+                                        </span>
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group">
+                                <div class="form-group{{ $errors->has('last_name') ? ' has-error' : '' }}">
                                     <label for="last_name">Last name</label>
 
                                     {{ Form::text('last_name', old('last_name'), [
@@ -71,13 +77,19 @@
                                         'placeholder'=>'Last name',
                                         'pattern' => '.{2,50}'
                                     ]) }}
+
+                                    @if ($errors->has('last_name'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('last_name') }}</strong>
+                                        </span>
+                                    @endif
                                 </div>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="form-group">
+                                <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                                     <label for="email">Email address</label>
 
                                     {{ Form::email('email', old('email'), [
@@ -87,10 +99,16 @@
                                         'required' => 'required',
                                         'pattern' => '.{7,60}'
                                     ]) }}
+
+                                    @if ($errors->has('email'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('email') }}</strong>
+                                        </span>
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group">
+                                <div class="form-group{{ $errors->has('phone') ? ' has-error' : '' }}">
                                     <label for="phone">Phone</label>
 
                                     {{ Form::text('phone', old('phone'), [
@@ -103,6 +121,12 @@
                                     ]) }}
 
                                     {{-- regExp "/^\+[0-9]{1,3}\([0-9]{2,3}\) [0-9]{4,5}-[0-9]{4}$/"--}}
+
+                                    @if ($errors->has('phone'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('phone') }}</strong>
+                                        </span>
+                                    @endif
 
                                 </div>
                             </div>
