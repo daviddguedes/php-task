@@ -12,6 +12,8 @@ Execute these commands bellow on your project root folder at command line:
 * Run `composer install`
 * Run `bower install`
 * Run `php artisan key:generate`
+* Run `php artisan migrate`
+* Run `php artisan db:seed`
 * Run `php artisan serve`
 * Visit http://localhost:8000
 
