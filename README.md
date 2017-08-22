@@ -16,4 +16,5 @@ Execute these commands bellow on your project root folder at command line:
 * Run `php artisan db:seed`
 * Run `php artisan serve`
 * Visit http://localhost:8000
+* Login - email: jamesbond@007.uk - password: manatwork
 
